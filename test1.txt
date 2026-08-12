@@ -1,2 +1,6 @@
 ﻿this is third file
+<<<<<<< HEAD
 THello preethi!!!
+=======
+Hello all please work
+>>>>>>> 3489cde (new line added here)
