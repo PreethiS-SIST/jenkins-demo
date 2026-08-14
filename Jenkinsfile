@@ -1,11 +1,8 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                sh 'ls'
-            }
-        }
+stage('Build') {
+    steps {
+        echo 'Starting Build'
+        sh 'pwd'
+        sh 'ls'
+        echo 'Build completed'
     }
 }
