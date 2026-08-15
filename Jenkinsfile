@@ -25,11 +25,14 @@ pipeline {
                 echo 'Package completed'
             }
         }
+
         stage('Deploy') {
-    steps {
-        sh 'cp target/jenkins-demo-1.0-SNAPSHOT.jar /opt/jenkins-demo/'
-    }
-}
+            steps {
+                echo 'Deploying application'
+                sh 'cp target/jenkins-demo-1.0-SNAPSHOT.jar /opt/jenkins-demo/'
+                echo 'Deployment completed'
+            }
+        }
 
     }
 }
